@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_283014_email_plus_notification">
+    <x_283014_email_plus_notification action="DELETE">
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <condition/>
+        <description/>
+        <event/>
+        <include_originator>true</include_originator>
+        <name>test</name>
+        <order>100</order>
+        <plus_template/>
+        <recipient_fields/>
+        <recipient_users/>
+        <sys_class_name>x_283014_email_plus_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 08:34:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b6b2d662f7470100eef97eef699b62d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>x_283014_email_plus_notification_8b6b2d662f7470100eef97eef699b62d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 08:34:09</sys_updated_on>
+        <table>incident</table>
+        <triggered_by>record_change</triggered_by>
+    </x_283014_email_plus_notification>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>8e5821d7dbe3d7c04c1ff70fbf961959</instance_id>
+        <instance_name>dev68334</instance_name>
+        <name>x_283014_email_plus_notification_8b6b2d662f7470100eef97eef699b62d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_283014_email_plus_notification"><x_283014_email_plus_notification action="INSERT_OR_UPDATE"><action_delete>false</action_delete><action_insert>true</action_insert><action_update>true</action_update><active>true</active><condition/><description/><event/><include_originator>true</include_originator><name>test</name><order>100</order><plus_template/><recipient_fields/><recipient_users/><sys_class_name>x_283014_email_plus_notification</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-20 08:34:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8b6b2d662f7470100eef97eef699b62d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test</sys_name><sys_overrides/><sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package><sys_policy/><sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope><sys_update_name>x_283014_email_plus_notification_8b6b2d662f7470100eef97eef699b62d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-20 08:34:09</sys_updated_on><table>incident</table><triggered_by>record_change</triggered_by></x_283014_email_plus_notification></record_update>]]></payload>
+        <payload_hash>2021150120</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>97e078522f1320100eef97eef699b64c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 08:34:09</sys_created_on>
+        <sys_id>29ab6d262f7470100eef97eef699b60f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a288e41170000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 08:34:09</sys_updated_on>
+        <type>Plus Notification</type>
+        <update_guid>61ab6d267a7470106f913caebbb2cb0f</update_guid>
+        <update_guid_history>61ab6d267a7470106f913caebbb2cb0f:2021150120</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="test">400ced662f7470100eef97eef699b686</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 08:35:40</sys_created_on>
+        <sys_db_object display_value="">x_283014_email_plus_notification</sys_db_object>
+        <sys_id>004df181bab6487a8092872275e37b89</sys_id>
+        <sys_metadata>8b6b2d662f7470100eef97eef699b62d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>x_283014_email_plus_notification_8b6b2d662f7470100eef97eef699b62d</sys_update_name>
+        <sys_update_version display_value="x_283014_email_plus_notification_8b6b2d662f7470100eef97eef699b62d">29ab6d262f7470100eef97eef699b60f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 08:35:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

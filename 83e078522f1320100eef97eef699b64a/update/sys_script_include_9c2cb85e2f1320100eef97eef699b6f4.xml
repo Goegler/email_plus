@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_283014_email.MJMLAPI</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MJMLAPI</name>
+        <script><![CDATA[var MJMLAPI = Class.create();
+var minify_regex = /\s\B/gm;
+MJMLAPI.prototype = {
+    initialize: function() {
+		this.logger=new global.GSLog('x_283014_email.log.level',this.type);
+    },
+	
+	render:function(mjml){
+		var result=null;
+		var body = {
+			mjml:mjml
+		};
+		var rest_method = getRestMethod(Constants.RENDER_URL,'POST',body);
+		var response = rest_method.execute();
+		
+		if(!response.haveError()){
+			var result_body = response.getBody();
+			var resultObj=JSON.parse(result_body);
+			
+			if(resultObj.errors.length>0){
+				for(var i in resultObj.errors){
+					var error=resultObj.errors[i];
+					gs.addErrorMessage('Transpile Error: '+error.formattedMessage);
+				}
+			}
+		}
+		else{
+			gs.error('Error during post to mjml. ErrorCode: {0}, ErrorMessage: {1}',response.getErrorCode(),response.getErrorMessage());
+		}
+		
+		return resultObj.html.replace(minify_regex,'');
+	},
+
+    type: 'MJMLAPI'
+};
+
+function getRestMethod(url,method,bodyObj){
+	var rest_method = new sn_ws.RESTMessageV2();
+	rest_method.setEndpoint(url);
+	
+	rest_method.setBasicAuth(Constants.APP_ID,Constants.SECRET);
+	
+	rest_method.setRequestHeader('Accept','application/json');
+	rest_method.setRequestHeader('Content-Type','application/json');
+
+	rest_method.setHttpMethod(method);
+	rest_method.setRequestBody(JSON.stringify(bodyObj));
+	
+	return rest_method;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-05 21:06:35</sys_created_on>
+        <sys_id>9c2cb85e2f1320100eef97eef699b6f4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>MJMLAPI</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_script_include_9c2cb85e2f1320100eef97eef699b6f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-24 11:32:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

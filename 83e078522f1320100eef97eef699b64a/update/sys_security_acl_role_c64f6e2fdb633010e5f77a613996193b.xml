@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-07 08:57:31</sys_created_on>
+        <sys_id>c64f6e2fdb633010e5f77a613996193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_283014_email_template.x_283014_email.plus_template_user</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_security_acl display_value="x_283014_email_template">2ca6fd622fb470100eef97eef699b6bc</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c64f6e2fdb633010e5f77a613996193b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-07 08:57:31</sys_updated_on>
+        <sys_user_role display_value="x_283014_email.plus_template_user" name="x_283014_email.plus_template_user">96cd4cba2f9b60100eef97eef699b69e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

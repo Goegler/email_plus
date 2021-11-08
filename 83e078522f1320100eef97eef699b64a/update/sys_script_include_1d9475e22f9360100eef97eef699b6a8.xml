@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_283014_email.GenerationUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GenerationUtil</name>
+        <script><![CDATA[var GenerationUtil = Class.create();
+gs.include('Mustache');
+GenerationUtil.prototype = {
+    initialize: function(triggerGR,notificationGR,outboundEmail) {
+		this.GR=triggerGR;
+		this.notifGR=notificationGR;
+		this.email=outboundEmail;
+    },
+	
+	generate: function (){
+		var text=this.getTemplateText();
+		return this.parseMustacheTemplate(text);
+	},
+	
+	getTrackerTag: function(){
+		var instanceUrl = gs.getProperty('glide.servlet.uri');
+		var scope = gs.getCurrentScopeName();
+		var url = instanceUrl+'api/'+scope+'/engagement/opened?watermark='+this.email.getWatermark(); 
+		return '<div style="background-image:url(\''+url+'\')" ></div>';
+	},
+	
+	getTemplateText: function(){
+		var text='';
+		var templateGR=new GlideRecord(Constants.TEMPLATE_TABLE);
+		templateGR.addQuery(Constants.NOTIFICATION_FIELD+'LIKE'+this.notifGR.getUniqueValue());
+		templateGR.query();
+		while(templateGR.next()){
+			text += templateGR.getValue(Constants.TEMPLATE_FIELD);
+		}
+		text = this.parseEmbeddedTemplates(text);
+		text = text.replace(Constants.TRACKER_REGEX,this.getTrackerTag());
+		
+		return text;
+	},
+	
+	getTemplateByInternalName: function(internalName){
+		var templateGR=new GlideRecord(Constants.TEMPLATE_TABLE);
+		templateGR.addQuery(Constants.INTERNALNAME_FIELD,internalName);
+		templateGR.setLimit(1);
+		templateGR.query();
+		if(templateGR.next()){
+			return templateGR.getValue(Constants.TEMPLATE_FIELD);
+		}
+		return '<span style="color:red">Could not find a template with Internal Name "'+internalName+'"</span>';
+	},
+	
+	parseEmbeddedTemplates: function(text) {
+		var parsedText=text;
+		var includes=text.match(Constants.INCLUDE_REGEX);
+		if (includes!== null) {
+			for(var i in includes){
+				var tag=includes[i];
+				var name = tag.split('"')[1];
+				var template = this.getTemplateByInternalName(name);
+				parsedText=parsedText.replace(tag,template);
+			}
+		}
+		return parsedText;
+	},
+	
+	parseMustacheTemplate: function(templateText){
+		var props={
+			current:this.GR
+		};
+		return Mustache.to_html(templateText, props);
+	},
+	/*
+	getNotification: function(email_id){
+		var eventGR = new GlideRecord('sys_email_log');
+		if(eventGR.get('email',email_id)){
+			return eventGR.notification.getRefRecord();
+		}
+		return null;
+	},
+    */
+    type: 'GenerationUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 19:43:56</sys_created_on>
+        <sys_id>1d9475e22f9360100eef97eef699b6a8</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>GenerationUtil</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_script_include_1d9475e22f9360100eef97eef699b6a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 10:35:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>system</category>
+        <format>png</format>
+        <height>1</height>
+        <image>657494f3dbb63010e5f77a613996197e</image>
+        <name>pixel.png</name>
+        <size_bytes>95</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:31:02</sys_created_on>
+        <sys_id>635490f7dbb63010e5f77a6139961936</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>pixel.png</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>db_image_635490f7dbb63010e5f77a6139961936</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:31:12</sys_updated_on>
+        <thumbnail/>
+        <width>1</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>3eb10792d1f0c7e07e7248273540f1952d9a5a2996f4b5df70ab026cd9f05517</hash>
+        <image_height>1</image_height>
+        <image_width>1</image_width>
+        <size_bytes>95</size_bytes>
+        <size_compressed>102</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:31:12</sys_created_on>
+        <sys_id>657494f3dbb63010e5f77a613996197e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:31:12</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>635490f7dbb63010e5f77a6139961936</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="657494f3dbb63010e5f77a613996197e">657494f3dbb63010e5f77a613996197e</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:31:12</sys_created_on>
+        <sys_id>a57494f3dbb63010e5f77a613996197e</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSjCDMyAwkVW+HnQJSzAE+Ia5AenmV7S2QXEmQXzCDw7MbaUAOl6eLYwjH9eQEIJuJgfGR4h5jIIvB09XPZZ1TQhMAekFJ+V8AAAA=</data>
+        <length>124</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="657494f3dbb63010e5f77a613996197e">657494f3dbb63010e5f77a613996197e</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:31:12</sys_created_on>
+        <sys_id>297454f7dbb63010e5f77a6139961975</sys_id>
+    </sys_attachment_doc>
+</record_update>
