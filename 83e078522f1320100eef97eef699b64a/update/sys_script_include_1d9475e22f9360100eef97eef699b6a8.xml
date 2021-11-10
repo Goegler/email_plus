@@ -10,39 +10,104 @@
         <script><![CDATA[var GenerationUtil = Class.create();
 gs.include('Mustache');
 GenerationUtil.prototype = {
-    initialize: function(triggerGR,notificationGR,outboundEmail) {
-		this.GR=triggerGR;
-		this.notifGR=notificationGR;
-		this.email=outboundEmail;
+    initialize: function(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+		this.current=current;
+		this.template=template;
+		this.email=email;
+		this.email_action=email_action;
+		this.event=event;
     },
 	
 	generate: function (){
 		var text=this.getTemplateText();
-		return this.parseMustacheTemplate(text);
+		var parsed = this.parseMustacheTemplate(text);
+		var scripts=parsed.match(Constants.MAILSCRIPT_REGEX);
+		if (scripts !== null) {
+			var segments = parsed.split(Constants.MAILSCRIPT_REGEX);
+			this.template.print(segments[0]);
+			for(var i in scripts){
+				this.executeMailScript(scripts[i]);
+				this.template.print(segments[Number(i)+1]);
+			}
+		}
+		else{
+			this.template.print(parsed);
+		}
 	},
 	
-	getTrackerTag: function(){
-		var instanceUrl = gs.getProperty('glide.servlet.uri');
-		var scope = gs.getCurrentScopeName();
-		var url = instanceUrl+'api/'+scope+'/engagement/opened?watermark='+this.email.getWatermark(); 
-		return '<div style="background-image:url(\''+url+'\')" ></div>';
+	executeMailScript: function(mailScript) {
+		var start = mailScript.indexOf(':');
+		var end = mailScript.indexOf('}');
+		var scriptName = mailScript.substring(start + 1, end);
+
+		var scriptGR = new GlideRecord('sys_script_email');
+		scriptGR.addQuery('name', scriptName);
+		scriptGR.setLimit(1);
+		scriptGR.query();
+		if (scriptGR.next()) {
+			try {
+				var evaluator = new GlideScopedEvaluator();
+				var variables = {
+					current: this.current,
+					template: this.template,
+					email: this.email,
+					email_action: this.email_action,
+					event: this.event
+				};
+				evaluator.evaluateScript(scriptGR, 'script', variables);
+			} catch (ex) {
+				gs.error('Error trying to evaluate email script: ' + ex);
+			}
+		}
+
 	},
 	
 	getTemplateText: function(){
 		var text='';
 		var templateGR=new GlideRecord(Constants.TEMPLATE_TABLE);
-		templateGR.addQuery(Constants.NOTIFICATION_FIELD+'LIKE'+this.notifGR.getUniqueValue());
+		templateGR.addQuery(Constants.NOTIFICATION_FIELD+'LIKE'+this.email_action.getUniqueValue());
 		templateGR.query();
 		while(templateGR.next()){
 			text += templateGR.getValue(Constants.TEMPLATE_FIELD);
 		}
-		text = this.parseEmbeddedTemplates(text);
-		text = text.replace(Constants.TRACKER_REGEX,this.getTrackerTag());
+		text = parseEmbeddedTemplates(text);
+		text = text.replace(Constants.TRACKER_REGEX,getTrackerTag(this.email_action.getUniqueValue()));
 		
 		return text;
 	},
 	
-	getTemplateByInternalName: function(internalName){
+	parseMustacheTemplate: function(templateText){
+		var props={
+			current:this.current
+		};
+		return Mustache.to_html(templateText, props);
+	},
+	
+    type: 'GenerationUtil'
+};
+
+function parseEmbeddedTemplates(text) {
+		var parsedText=text;
+		var includes=text.match(Constants.INCLUDE_REGEX);
+		if (includes!== null) {
+			for(var i in includes){
+				var tag=includes[i];
+				var name = tag.split('"')[1];
+				var template = getTemplateByInternalName(name);
+				parsedText=parsedText.replace(tag,template);
+			}
+		}
+		return parsedText;
+};
+function getTrackerTag(notificationSysId){
+		var instanceUrl = gs.getProperty('glide.servlet.uri');
+		var scope = gs.getCurrentScopeName();
+		var url = instanceUrl+'api/'+scope+'/engagement/opened?notification='+notificationSysId; 
+		return '<div style="background-image:url(\''+url+'\')" ></div>';
+};
+function getTemplateByInternalName(internalName){
 		var templateGR=new GlideRecord(Constants.TEMPLATE_TABLE);
 		templateGR.addQuery(Constants.INTERNALNAME_FIELD,internalName);
 		templateGR.setLimit(1);
@@ -51,50 +116,19 @@ GenerationUtil.prototype = {
 			return templateGR.getValue(Constants.TEMPLATE_FIELD);
 		}
 		return '<span style="color:red">Could not find a template with Internal Name "'+internalName+'"</span>';
-	},
-	
-	parseEmbeddedTemplates: function(text) {
-		var parsedText=text;
-		var includes=text.match(Constants.INCLUDE_REGEX);
-		if (includes!== null) {
-			for(var i in includes){
-				var tag=includes[i];
-				var name = tag.split('"')[1];
-				var template = this.getTemplateByInternalName(name);
-				parsedText=parsedText.replace(tag,template);
-			}
-		}
-		return parsedText;
-	},
-	
-	parseMustacheTemplate: function(templateText){
-		var props={
-			current:this.GR
-		};
-		return Mustache.to_html(templateText, props);
-	},
-	/*
-	getNotification: function(email_id){
-		var eventGR = new GlideRecord('sys_email_log');
-		if(eventGR.get('email',email_id)){
-			return eventGR.notification.getRefRecord();
-		}
-		return null;
-	},
-    */
-    type: 'GenerationUtil'
-};]]></script>
+};
+]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-06 19:43:56</sys_created_on>
         <sys_id>1d9475e22f9360100eef97eef699b6a8</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>GenerationUtil</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>sys_script_include_1d9475e22f9360100eef97eef699b6a8</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-08 10:35:24</sys_updated_on>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 09:44:18</sys_updated_on>
     </sys_script_include>
 </record_update>

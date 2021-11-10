@@ -17,8 +17,24 @@ EngagementHelper.prototype = {
 		return attachmentStream;
 	},
 	
-	addEngagement: function(watermark){
-		
+	addEngagement: function(notification,headers){
+		if(notification){
+			this.createMetric({
+				table:'sysevent_email_action',
+				id: notification,
+				metric_type: 'open'
+			});
+			
+		}
+	},
+	
+	createMetric: function(values){
+		var metricGR = new GlideRecord(Constants.METRIC_TABLE);
+		metricGR.initialize();
+		for(var prop in values){
+			metricGR.setValue(prop,values[prop]);
+		}
+		return metricGR.insert();
 	},
 
     type: 'EngagementHelper'
@@ -27,13 +43,13 @@ EngagementHelper.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-06 08:36:15</sys_created_on>
         <sys_id>ed01615fdb273010e5f77a6139961979</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>EngagementHelper</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>sys_script_include_ed01615fdb273010e5f77a6139961979</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-07 08:45:49</sys_updated_on>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 10:33:45</sys_updated_on>
     </sys_script_include>
 </record_update>

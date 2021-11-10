@@ -9,15 +9,18 @@
         <name>opened</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 	
-	gs.info('queryString: ' + request.queryString + '\n' +
-			JSON.stringify(request.headers,null,'\t'));
-	
 	response.setContentType('image/png');
 	response.setStatus(200);
 	
 	var helper = new EngagementHelper();
-	if(request.queryParams.watermark){
-		helper.addEngagement(request.queryParams.watermark);
+	if(request.queryParams.notification){
+		if(request.headers.referrer && request.headers.referrer=='http://mail.google.com/'){
+			//ignore the first request from gmail, where it has referrer set.
+		}
+		else{
+			helper.addEngagement(request.queryParams.notification,request.headers);	
+		}
+		
 	}
 	var writer = response.getStreamWriter();
 	writer.writeStream(helper.getPixelStream());
@@ -39,14 +42,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-10-01 07:37:56</sys_created_on>
         <sys_id>b409bbafdbb23010e5f77a613996197e</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>opened</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>sys_ws_operation_b409bbafdbb23010e5f77a613996197e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-08 09:20:33</sys_updated_on>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 09:47:23</sys_updated_on>
         <web_service_definition display_value="Engagement">ebd837afdbb23010e5f77a61399619e3</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
