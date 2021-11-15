@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_283014_email_template">
+    <x_283014_email_template action="DELETE">
+        <display_name>Example Header</display_name>
+        <internal_name/>
+        <sys_class_name>x_283014_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 17:32:40</sys_created_on>
+        <sys_id>24cce148dbff3010e5f77a61399619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>x_283014_email_template_24cce148dbff3010e5f77a61399619bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 17:32:40</sys_updated_on>
+        <template><![CDATA[t]]></template>
+        <used_for_notifications/>
+    </x_283014_email_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>6e264edfdb953410e26fd7c8f49619f9</instance_id>
+        <instance_name>dev117995</instance_name>
+        <name>x_283014_email_template_24cce148dbff3010e5f77a61399619bd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_283014_email_template"&gt;&lt;x_283014_email_template action="INSERT_OR_UPDATE"&gt;&lt;display_name&gt;Example Header&lt;/display_name&gt;&lt;internal_name/&gt;&lt;sys_class_name&gt;x_283014_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-11-08 17:32:40&lt;/sys_created_on&gt;&lt;sys_id&gt;24cce148dbff3010e5f77a61399619bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Email+" source="x_283014_email"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email+"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_scope&gt;&lt;sys_update_name&gt;x_283014_email_template_24cce148dbff3010e5f77a61399619bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-08 17:32:40&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[t]]&gt;&lt;/template&gt;&lt;used_for_notifications/&gt;&lt;/x_283014_email_template&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1906566497</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>02869dc4db3f3010e5f77a61399619f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 17:32:41</sys_created_on>
+        <sys_id>c91fe588dbff3010e5f77a61399619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d009bf6a50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 17:32:41</sys_updated_on>
+        <type>Email+ Template</type>
+        <update_guid>051fe58828ff3010e509bb41f55e49ea</update_guid>
+        <update_guid_history>051fe58828ff3010e509bb41f55e49ea:1906566497</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d970de00db377010e5f77a61399619d7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 19:58:31</sys_created_on>
+        <sys_db_object display_value="" name="x_283014_email_template">x_283014_email_template</sys_db_object>
+        <sys_id>0c442459519a47648cf6b27306051d90</sys_id>
+        <sys_metadata>24cce148dbff3010e5f77a61399619bd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>x_283014_email_template_24cce148dbff3010e5f77a61399619bd</sys_update_name>
+        <sys_update_version display_value="x_283014_email_template_24cce148dbff3010e5f77a61399619bd">c91fe588dbff3010e5f77a61399619ea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 19:58:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

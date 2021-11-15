@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_283014_email.log_level</name>
+        <read_roles/>
+        <suffix>log_level</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-08 18:14:47</sys_created_on>
+        <sys_id>895433472f97e0100eef97eef699b69d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_283014_email.log_level</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_properties_895433472f97e0100eef97eef699b69d</sys_update_name>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:38:12</sys_updated_on>
+        <type>string</type>
+        <value>debug</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=895433472f97e0100eef97eef699b69d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>6e264edfdb953410e26fd7c8f49619f9</instance_id>
+        <instance_name>dev117995</instance_name>
+        <name>sys_properties_895433472f97e0100eef97eef699b69d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_283014_email.log_level</name><read_roles/><suffix>log_level</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-08 18:14:47</sys_created_on><sys_id>895433472f97e0100eef97eef699b69d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_283014_email.log_level</sys_name><sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package><sys_policy/><sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope><sys_update_name>sys_properties_895433472f97e0100eef97eef699b69d</sys_update_name><sys_updated_by>swa_dev</sys_updated_by><sys_updated_on>2021-11-10 21:38:12</sys_updated_on><type>string</type><value>debug</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=895433472f97e0100eef97eef699b69d"/></record_update>]]></payload>
+        <payload_hash>730251051</payload_hash>
+        <record_name>x_283014_email.log_level</record_name>
+        <reverted_from/>
+        <source>2b5e3d24db333010e5f77a6139961990</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-10 21:38:12</sys_created_on>
+        <sys_id>817a38b8db3b7010e5f77a6139961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d0bc979610000001</sys_recorded_at>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:38:12</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>c97a38b8aa3b70108f6f3e21858b7948</update_guid>
+        <update_guid_history>c97a38b8aa3b70108f6f3e21858b7948:730251051,d774b3478d97e010c1b3467cae7e29cb:1010778076</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-13 07:52:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>4861e12aa862442da14f4d33ed270231</sys_id>
+        <sys_metadata>895433472f97e0100eef97eef699b69d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_283014_email.log_level</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_properties_895433472f97e0100eef97eef699b69d</sys_update_name>
+        <sys_update_version display_value="sys_properties_895433472f97e0100eef97eef699b69d">817a38b8db3b7010e5f77a6139961949</sys_update_version>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-13 07:52:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

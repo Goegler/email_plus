@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_283014_email.MJMLAPI</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MJMLAPI</name>
+        <script><![CDATA[var MJMLAPI = Class.create();
+var minify_regex = /\s\B/gm;
+MJMLAPI.prototype = {
+    initialize: function() {
+		this.logger=new global.GSLog('x_283014_email.log.level',this.type);
+    },
+	
+	render:function(mjml){
+		var result=null;
+		var body = {
+			mjml:mjml
+		};
+		var rest_method = getRestMethod(Constants.RENDER_URL,'POST',body);
+		var response = rest_method.execute();
+		
+		if(!response.haveError()){
+			var result_body = response.getBody();
+			var resultObj=JSON.parse(result_body);
+			
+			if(resultObj.errors.length>0){
+				for(var i in resultObj.errors){
+					var error=resultObj.errors[i];
+					gs.addErrorMessage('Transpile Error: '+error.formattedMessage);
+				}
+			}
+		}
+		else{
+			gs.error('Error during post to mjml. ErrorCode: {0}, ErrorMessage: {1}',response.getErrorCode(),response.getErrorMessage());
+		}
+		
+		return resultObj.html.replace(minify_regex,'');
+	},
+
+    type: 'MJMLAPI'
+};
+
+function getRestMethod(url,method,bodyObj){
+	var rest_method = new sn_ws.RESTMessageV2();
+	rest_method.setEndpoint(url);
+	
+	rest_method.setBasicAuth(Constants.APP_ID,Constants.SECRET);
+	
+	rest_method.setRequestHeader('Accept','application/json');
+	rest_method.setRequestHeader('Content-Type','application/json');
+
+	rest_method.setHttpMethod(method);
+	rest_method.setRequestBody(JSON.stringify(bodyObj));
+	
+	return rest_method;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-05 21:06:35</sys_created_on>
+        <sys_id>9c2cb85e2f1320100eef97eef699b6f4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>MJMLAPI</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_script_include_9c2cb85e2f1320100eef97eef699b6f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-24 11:32:29</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>8e5821d7dbe3d7c04c1ff70fbf961959</instance_id>
+        <instance_name>dev68334</instance_name>
+        <name>sys_script_include_9c2cb85e2f1320100eef97eef699b6f4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_283014_email.MJMLAPI&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MJMLAPI&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var MJMLAPI = Class.create();
+var minify_regex = /\s\B/gm;
+MJMLAPI.prototype = {
+    initialize: function() {
+		this.logger=new global.GSLog('x_283014_email.log.level',this.type);
+    },
+	
+	render:function(mjml){
+		var result=null;
+		var body = {
+			mjml:mjml
+		};
+		var rest_method = getRestMethod(Constants.RENDER_URL,'POST',body);
+		var response = rest_method.execute();
+		
+		if(!response.haveError()){
+			var result_body = response.getBody();
+			var resultObj=JSON.parse(result_body);
+			
+			if(resultObj.errors.length&gt;0){
+				for(var i in resultObj.errors){
+					var error=resultObj.errors[i];
+					gs.addErrorMessage('Transpile Error: '+error.formattedMessage);
+				}
+			}
+		}
+		else{
+			gs.error('Error during post to mjml. ErrorCode: {0}, ErrorMessage: {1}',response.getErrorCode(),response.getErrorMessage());
+		}
+		
+		return resultObj.html.replace(minify_regex,'');
+	},
+
+    type: 'MJMLAPI'
+};
+
+function getRestMethod(url,method,bodyObj){
+	var rest_method = new sn_ws.RESTMessageV2();
+	rest_method.setEndpoint(url);
+	
+	rest_method.setBasicAuth(Constants.APP_ID,Constants.SECRET);
+	
+	rest_method.setRequestHeader('Accept','application/json');
+	rest_method.setRequestHeader('Content-Type','application/json');
+
+	rest_method.setHttpMethod(method);
+	rest_method.setRequestBody(JSON.stringify(bodyObj));
+	
+	return rest_method;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-05 21:06:35&lt;/sys_created_on&gt;&lt;sys_id&gt;9c2cb85e2f1320100eef97eef699b6f4&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;MJMLAPI&lt;/sys_name&gt;&lt;sys_package display_value="Email+" source="x_283014_email"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Email+"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9c2cb85e2f1320100eef97eef699b6f4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-24 11:32:29&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1076008904</payload_hash>
+        <record_name>MJMLAPI</record_name>
+        <reverted_from/>
+        <source>97e078522f1320100eef97eef699b64c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-24 11:32:29</sys_created_on>
+        <sys_id>9ed17cdc2fb760100eef97eef699b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17903a70ae40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-24 11:32:29</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>1ad17cdcb9b76010817c9cce80145650</update_guid>
+        <update_guid_history>1ad17cdcb9b76010817c9cce80145650:1076008904,e9b9e0100df760108243b549927e11f5:-1718236971,7446ec5c1fb76010fceaadf692069703:510099388,0ef63f475497e010f86fe9da2493edb8:-1718236971,89e4ffc34097e0101e5d81f65439f1d3:-872270720,abc4f747c697e010bf6b172ba713738d:1241993703,dd2a61f20613a01064a6a69c95a78982:-337248970,49176462c19f20104de1a4db7ee27694:-1408619861,2e0f3412905320107c1121515f46aaf5:-1447070392</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-10 21:06:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>cabac31dc6e74aa5bb86cd8f5d981951</sys_id>
+        <sys_metadata>9c2cb85e2f1320100eef97eef699b6f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MJMLAPI</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_script_include_9c2cb85e2f1320100eef97eef699b6f4</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9c2cb85e2f1320100eef97eef699b6f4">9ed17cdc2fb760100eef97eef699b650</sys_update_version>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-10 21:06:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

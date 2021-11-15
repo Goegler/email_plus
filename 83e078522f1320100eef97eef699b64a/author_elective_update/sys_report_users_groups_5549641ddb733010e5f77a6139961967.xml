@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">5d49641ddb733010e5f77a6139961966</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-12 09:40:06</sys_created_on>
+        <sys_id>5549641ddb733010e5f77a6139961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5d49641ddb733010e5f77a6139961966</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_report_users_groups_5549641ddb733010e5f77a6139961967</sys_update_name>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-12 09:40:06</sys_updated_on>
+        <user_id display_value="Simon Abildgaard">d36d3de0db333010e5f77a61399619cb</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>6e264edfdb953410e26fd7c8f49619f9</instance_id>
+        <instance_name>dev117995</instance_name>
+        <name>sys_report_users_groups_5549641ddb733010e5f77a6139961967</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">5d49641ddb733010e5f77a6139961966</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>swa_dev</sys_created_by><sys_created_on>2021-11-12 09:40:06</sys_created_on><sys_id>5549641ddb733010e5f77a6139961967</sys_id><sys_mod_count>0</sys_mod_count><sys_name>5d49641ddb733010e5f77a6139961966</sys_name><sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package><sys_policy/><sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope><sys_update_name>sys_report_users_groups_5549641ddb733010e5f77a6139961967</sys_update_name><sys_updated_by>swa_dev</sys_updated_by><sys_updated_on>2021-11-12 09:40:06</sys_updated_on><user_id display_value="Simon Abildgaard">d36d3de0db333010e5f77a61399619cb</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>587006456</payload_hash>
+        <record_name>5d49641ddb733010e5f77a6139961966</record_name>
+        <reverted_from/>
+        <source>2b5e3d24db333010e5f77a6139961990</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-12 09:40:06</sys_created_on>
+        <sys_id>9949641ddb733010e5f77a6139961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d1384bdeb0000001</sys_recorded_at>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-12 09:40:06</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>d149641dea7330109f77ebe9ff2cd869</update_guid>
+        <update_guid_history>d149641dea7330109f77ebe9ff2cd869:587006456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>swa_dev</sys_created_by>
+        <sys_created_on>2021-11-12 09:41:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>06086b8095494c52b15b2330b820a064</sys_id>
+        <sys_metadata>5549641ddb733010e5f77a6139961967</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5d49641ddb733010e5f77a6139961966</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_5549641ddb733010e5f77a6139961967</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_5549641ddb733010e5f77a6139961967">9949641ddb733010e5f77a6139961969</sys_update_version>
+        <sys_updated_by>swa_dev</sys_updated_by>
+        <sys_updated_on>2021-11-12 09:41:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

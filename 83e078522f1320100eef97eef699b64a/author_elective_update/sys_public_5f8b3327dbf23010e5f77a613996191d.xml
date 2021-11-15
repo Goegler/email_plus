@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public">
+    <sys_public action="DELETE">
+        <active>true</active>
+        <page>test</page>
+        <sys_class_name>sys_public</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 07:45:32</sys_created_on>
+        <sys_id>5f8b3327dbf23010e5f77a613996191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_public_5f8b3327dbf23010e5f77a613996191d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 07:45:32</sys_updated_on>
+    </sys_public>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>6e264edfdb953410e26fd7c8f49619f9</instance_id>
+        <instance_name>dev117995</instance_name>
+        <name>sys_public_5f8b3327dbf23010e5f77a613996191d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public"><sys_public action="INSERT_OR_UPDATE"><active>true</active><page>test</page><sys_class_name>sys_public</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-01 07:45:32</sys_created_on><sys_id>5f8b3327dbf23010e5f77a613996191d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test</sys_name><sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package><sys_policy/><sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope><sys_update_name>sys_public_5f8b3327dbf23010e5f77a613996191d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-01 07:45:32</sys_updated_on></sys_public></record_update>]]></payload>
+        <payload_hash>-2092938474</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>97e078522f1320100eef97eef699b64c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 07:45:32</sys_created_on>
+        <sys_id>254cb36fdbb23010e5f77a613996197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c3ad0c3100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 07:45:32</sys_updated_on>
+        <type>Public Pages</type>
+        <update_guid>6d4cb36fd5b230100b6a146440887479</update_guid>
+        <update_guid_history>6d4cb36fd5b230100b6a146440887479:-2092938474</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 07:46:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_public">sys_public</sys_db_object>
+        <sys_id>2db8c425a1e94b6faec7efe6d9504669</sys_id>
+        <sys_metadata>5f8b3327dbf23010e5f77a613996191d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_public_5f8b3327dbf23010e5f77a613996191d</sys_update_name>
+        <sys_update_version display_value="sys_public_5f8b3327dbf23010e5f77a613996191d">254cb36fdbb23010e5f77a613996197a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 07:46:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

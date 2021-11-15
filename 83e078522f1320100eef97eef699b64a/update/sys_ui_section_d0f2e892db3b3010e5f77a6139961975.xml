@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d0f2e892db3b3010e5f77a6139961975" sys_domain="global" table="x_283014_email_metric_instance" version="3" view="dimension">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>f176e05adb3b3010e5f77a6139961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent_metric</element>
+            <position>1</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>7576e05adb3b3010e5f77a6139961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dimension_type</element>
+            <position>2</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>f576e05adb3b3010e5f77a6139961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>7976e05adb3b3010e5f77a6139961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent_metric.notification</element>
+            <position>4</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>f976e05adb3b3010e5f77a6139961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value</element>
+            <position>5</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>3976649adb3b3010e5f77a6139961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:01:45</sys_created_on>
+            <sys_id>b976649adb3b3010e5f77a6139961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_283014_email_metric_instance" sys_domain="global" view="14f2a4dadbf73010e5f77a6139961965">d0f2e892db3b3010e5f77a6139961975</sys_ui_section>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:01:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_283014_email_metric_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 11:46:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0f2e892db3b3010e5f77a6139961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_283014_email_metric_instance</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+            <sys_update_name>sys_ui_section_d0f2e892db3b3010e5f77a6139961975</sys_update_name>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 11:46:22</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Dimension" name="dimension">14f2a4dadbf73010e5f77a6139961965</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

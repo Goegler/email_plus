@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>write</operation>
+        <source_scope display_value="Email+">83e078522f1320100eef97eef699b64a</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 10:53:28</sys_created_on>
+        <sys_id>11b31c80db373010e5f77a6139961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_scope_privilege_11b31c80db373010e5f77a6139961912</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 10:53:28</sys_updated_on>
+        <target_name>sysevent_email_action</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>6e264edfdb953410e26fd7c8f49619f9</instance_id>
+        <instance_name>dev117995</instance_name>
+        <name>sys_scope_privilege_11b31c80db373010e5f77a6139961912</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>write</operation><source_scope display_value="Email+">83e078522f1320100eef97eef699b64a</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-08 10:53:28</sys_created_on><sys_id>11b31c80db373010e5f77a6139961912</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sysevent_email_action</sys_name><sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package><sys_policy/><sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope><sys_update_name>sys_scope_privilege_11b31c80db373010e5f77a6139961912</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-08 10:53:28</sys_updated_on><target_name>sysevent_email_action</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>-1907498712</payload_hash>
+        <record_name>sysevent_email_action</record_name>
+        <reverted_from/>
+        <source>97e078522f1320100eef97eef699b64c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 10:53:28</sys_created_on>
+        <sys_id>ddb31c80db373010e5f77a6139961913</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cff2e7aa40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 10:53:28</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>19b31c8057373010c16fe6ea12171813</update_guid>
+        <update_guid_history>19b31c8057373010c16fe6ea12171813:-1907498712</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-08 10:59:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>2ea5a8d7f3b441df888b325bab704e09</sys_id>
+        <sys_metadata>11b31c80db373010e5f77a6139961912</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent_email_action</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_11b31c80db373010e5f77a6139961912</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_11b31c80db373010e5f77a6139961912">ddb31c80db373010e5f77a6139961913</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-08 10:59:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

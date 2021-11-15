@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Testing</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[var gr = new GlideRecord('incident');
+gr.addActiveQuery();
+gr.query();
+gr.next();
+gs.info('here');
+var util = new GenerationUtil(gr);
+gs.info(util.generate());]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 09:47:40</sys_created_on>
+        <sys_id>e43cf12a2fb470100eef97eef699b635</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Testing</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_update_name>sys_script_fix_e43cf12a2fb470100eef97eef699b635</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 10:17:20</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Email+">83e078522f1320100eef97eef699b64a</application>
+        <file_path/>
+        <instance_id>8e5821d7dbe3d7c04c1ff70fbf961959</instance_id>
+        <instance_name>dev68334</instance_name>
+        <name>sys_script_fix_e43cf12a2fb470100eef97eef699b635</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;name&gt;Testing&lt;/name&gt;&lt;record_for_rollback&gt;false&lt;/record_for_rollback&gt;&lt;script&gt;&lt;![CDATA[var gr = new GlideRecord('incident');
+gr.addActiveQuery();
+gr.query();
+gr.next();
+gs.info('here');
+var util = new GenerationUtil(gr);
+gs.info(util.generate());]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-20 09:47:40&lt;/sys_created_on&gt;&lt;sys_id&gt;e43cf12a2fb470100eef97eef699b635&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Testing&lt;/sys_name&gt;&lt;sys_package display_value="Email+" source="x_283014_email"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email+"&gt;83e078522f1320100eef97eef699b64a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_e43cf12a2fb470100eef97eef699b635&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-20 10:17:20&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1900886259</payload_hash>
+        <record_name>Testing</record_name>
+        <reverted_from/>
+        <source>97e078522f1320100eef97eef699b64c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 10:17:20</sys_created_on>
+        <sys_id>d9434eae2fb470100eef97eef699b668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a28ecbaf20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 10:17:20</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>55434eae25b47010098198f6d045b468</update_guid>
+        <update_guid_history>55434eae25b47010098198f6d045b468:-1900886259,2d138aaeaab4701007b08176195736a2:-1122743398,8603caaea6b470106922dd1171876ba5:-495567847,a6b206ae05b4701029be160910301700:-1609833422,82a282ae30b470109061c39bb2cc6834:-495567847,db8282ae4db4701082c3718dddab6f56:646001808,367206ae0db470109652003c81b33e04:-1122743398,4e528e2ab2b470105d63f403477eb1a2:1350888592,667cbd2a2cb47010650b6cd6aeb50b9a:-428892574</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-20 19:18:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>aaab18c64c264639a078e1f80386b581</sys_id>
+        <sys_metadata>e43cf12a2fb470100eef97eef699b635</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Testing</sys_name>
+        <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+        <sys_scope_delete display_value="">9e50010ce9754bebb5841f42984264f1</sys_scope_delete>
+        <sys_update_name>sys_script_fix_e43cf12a2fb470100eef97eef699b635</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_e43cf12a2fb470100eef97eef699b635">d9434eae2fb470100eef97eef699b668</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 19:18:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
