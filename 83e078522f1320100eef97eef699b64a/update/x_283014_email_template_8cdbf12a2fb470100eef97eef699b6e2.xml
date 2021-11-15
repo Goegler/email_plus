@@ -6,16 +6,20 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-06-20 09:46:00</sys_created_on>
         <sys_id>8cdbf12a2fb470100eef97eef699b6e2</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Example Template</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>x_283014_email_template_8cdbf12a2fb470100eef97eef699b6e2</sys_update_name>
         <sys_updated_by>swa_dev</sys_updated_by>
-        <sys_updated_on>2021-11-10 09:45:09</sys_updated_on>
-        <template><![CDATA[<email_plus_include name="example_header" />
+        <sys_updated_on>2021-11-15 11:02:27</sys_updated_on>
+        <template><![CDATA[<!-- example of including another template -->
+<email_plus_include name="example_header" />
 <p>Hello, here is a test email.</p>
+
+<!-- example of a trackable link -->
+<email_plus_link href="/incident.do?sys_id={{current.sys_id}}">Go to incident</email_plus_link>
 
 <!-- example of mustache syntax -->
 {{#current.watch_list}}
@@ -27,7 +31,10 @@
 ${mail_script:incident_comments}
 <hr/>
 
+<!-- example of including another template -->
 <email_plus_include name="example_footer" />
+
+<!-- example of using email tracker -->
 <email_plus_tracker />]]></template>
         <used_for_notifications>adf35980dbbb3010e5f77a61399619e5</used_for_notifications>
     </x_283014_email_template>

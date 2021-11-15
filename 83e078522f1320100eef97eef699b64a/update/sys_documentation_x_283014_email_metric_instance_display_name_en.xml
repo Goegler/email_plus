@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="display_name" label="Display Name" language="en" table="x_283014_email_metric_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>display_name</element>
+            <help/>
+            <hint/>
+            <label>Display Name</label>
+            <language>en</language>
+            <name>x_283014_email_metric_instance</name>
+            <plural>Display Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 11:48:11</sys_created_on>
+            <sys_id>8f53a8d2db3b3010e5f77a61399619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Display Name</sys_name>
+            <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+            <sys_update_name>sys_documentation_x_283014_email_metric_instance_display_name_en</sys_update_name>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 11:48:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

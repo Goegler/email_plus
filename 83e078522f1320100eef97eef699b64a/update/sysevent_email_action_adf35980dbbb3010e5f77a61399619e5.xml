@@ -35,7 +35,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html/>
+        <message_html><![CDATA[<p>${mail_script:email_plus}</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Email+ Example Notification</name>
@@ -49,7 +49,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>update to your incident</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -57,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>adf35980dbbb3010e5f77a61399619e5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Email+ Example Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
@@ -65,7 +65,7 @@
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>sysevent_email_action_adf35980dbbb3010e5f77a61399619e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-08 15:37:49</sys_updated_on>
+        <sys_updated_on>2021-11-08 21:40:17</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

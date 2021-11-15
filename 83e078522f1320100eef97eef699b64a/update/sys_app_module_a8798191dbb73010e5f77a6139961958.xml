@@ -4,7 +4,7 @@
         <application display_value="Email+">e2cdc0be2f9b60100eef97eef699b6e1</application>
         <assessment/>
         <device_type/>
-        <filter table="x_283014_email_metric_instance">metric_type!=dimension^EQ<item display_value="Dimension" endquery="false" field="metric_type" goto="false" newquery="false" operator="!=" or="false" value="dimension"/>
+        <filter table="syslog_app_scope">sys_scope=83e078522f1320100eef97eef699b64a^EQ<item display_table="sys_scope" display_value="Email+" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="83e078522f1320100eef97eef699b64a"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -12,31 +12,31 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Email+ Metric Instances</mobile_title>
+        <mobile_title>Email+ Templates</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_283014_email_metric_instance</name>
-        <order>30</order>
+        <name>syslog_app_scope</name>
+        <order>9999</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_283014_email.plus_template_user</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>swa_dev</sys_created_by>
-        <sys_created_on>2021-11-10 10:05:20</sys_created_on>
+        <sys_created_on>2021-11-12 12:00:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>67db56e0db373010e5f77a6139961923</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Metric Instances</sys_name>
+        <sys_id>a8798191dbb73010e5f77a6139961958</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Log</sys_name>
         <sys_overrides/>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
-        <sys_update_name>sys_app_module_67db56e0db373010e5f77a6139961923</sys_update_name>
+        <sys_update_name>sys_app_module_a8798191dbb73010e5f77a6139961958</sys_update_name>
         <sys_updated_by>swa_dev</sys_updated_by>
-        <sys_updated_on>2021-11-12 12:03:21</sys_updated_on>
+        <sys_updated_on>2021-11-12 12:03:11</sys_updated_on>
         <timeline_page/>
-        <title>Metric Instances</title>
+        <title>Log</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

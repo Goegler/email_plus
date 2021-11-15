@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="no_update=true" label="Email+ Metric Instance" max_length="40" name="x_283014_email_metric_instance" type="collection">
-        <element dependent="table" dependent_on_field="table" label="Id" max_length="32" name="id" type="document_id" use_dependent_field="true"/>
-        <element choice="1" label="Metric Type" max_length="40" name="metric_type" type="choice">
+    <element attributes="no_update=true" label="Email+ Metric Instance" max_length="40" name="x_283014_email_metric_instance" sizeclass="18" type="collection">
+        <element choice="1" label="Dimension Type" max_length="40" name="dimension_type" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Open" value="open"/>
+                <element inactive_on_update="false" label="Device" value="device"/>
+                <element inactive_on_update="false" label="OS" value="os"/>
             </choice>
         </element>
-        <element label="Table" max_length="80" name="table" type="table_name"/>
+        <element display="true" label="Display Name" max_length="40" name="display_name" read_only="true" type="string"/>
+        <element choice="1" label="Metric Type" max_length="40" name="metric_type" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="10" value="open"/>
+                <element inactive_on_update="false" label="Link Click" sequence="20" value="link_click"/>
+                <element inactive_on_update="false" label="Dimension" sequence="999" value="dimension"/>
+            </choice>
+        </element>
+        <element label="Notification" max_length="32" name="notification" read_only="true" reference="sysevent_email_action" type="reference"/>
+        <element label="Parent Metric" max_length="32" name="parent_metric" read_only="true" reference="x_283014_email_metric_instance" reference_qual="metric_type!=dimension^EQ" reference_qual_condition="metric_type!=dimension^EQ" type="reference"/>
+        <element label="Value" max_length="100" name="value" read_only="true" type="string_full_utf8"/>
         <index name="index">
-            <element name="id"/>
+            <element name="notification"/>
+        </index>
+        <index name="index2">
+            <element name="parent_metric"/>
         </index>
     </element>
 </database>

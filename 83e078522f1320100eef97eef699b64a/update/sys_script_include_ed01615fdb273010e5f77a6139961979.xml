@@ -8,48 +8,81 @@
         <description/>
         <name>EngagementHelper</name>
         <script><![CDATA[var EngagementHelper = Class.create();
-EngagementHelper.prototype = {
-    initialize: function() {
-    },
-	
-	getPixelStream: function() {
-		var attachmentStream= new GlideSysAttachment().getContentStream(Constants.PIXEL_SYSID);
-		return attachmentStream;
-	},
-	
-	addEngagement: function(notification,headers){
-		if(notification){
-			this.createMetric({
-				table:'sysevent_email_action',
-				id: notification,
-				metric_type: 'open'
-			});
-			
-		}
-	},
-	
-	createMetric: function(values){
-		var metricGR = new GlideRecord(Constants.METRIC_TABLE);
-		metricGR.initialize();
-		for(var prop in values){
-			metricGR.setValue(prop,values[prop]);
-		}
-		return metricGR.insert();
-	},
 
-    type: 'EngagementHelper'
-};]]></script>
+gs.include("UAParser");
+EngagementHelper.prototype = {
+  initialize: function () {},
+
+  getPixelStream: function () {
+    var attachmentStream = new GlideSysAttachment().getContentStream(
+      Constants.PIXEL_SYSID
+    );
+    return attachmentStream;
+  },
+	
+  addUADimensions: function(uaString, metricSysid) {
+    var uaData = this.getUAData(uaString);
+
+    this.addDimension('device', metricSysid, uaData.device.type);
+    this.addDimension('os', metricSysid, uaData.os.name);
+},
+
+  addMetric: function (metricType, notification, value) {
+    return this.createRecord({
+      notification: notification + "",
+      metric_type: metricType,
+      value: value || "",
+    });
+  },
+
+  addDimension: function (dimensionType, parentMetric, value) {
+    return this.createRecord({
+      metric_type: Constants.DIMENSION_CHOICE,
+      dimension_type: dimensionType,
+      parent_metric: parentMetric,
+      value: value || "",
+    });
+  },
+
+  getUAData: function (uaString) {
+    var parser = new UAParser();
+    parser.setUA(uaString);
+	var result = parser.getResult();
+	
+	if (uaString.indexOf('GoogleImageProxy') > -1) {
+		result.device.type = 'GoogleImageProxy';
+	}
+	if(!result.device.type){
+		result.device.type='laptop/desktop';
+	}
+	
+    gs.debug('UA Data: '+JSON.stringify(result, null, "\t"));
+	return result;
+  },
+
+  createRecord: function (values) {
+    var metricGR = new GlideRecord(Constants.METRIC_TABLE);
+    metricGR.initialize();
+    for (var prop in values) {
+      metricGR.setValue(prop, values[prop]);
+    }
+    return metricGR.insert();
+  },
+
+  type: "EngagementHelper",
+};
+]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-06 08:36:15</sys_created_on>
         <sys_id>ed01615fdb273010e5f77a6139961979</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>EngagementHelper</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
         <sys_update_name>sys_script_include_ed01615fdb273010e5f77a6139961979</sys_update_name>
         <sys_updated_by>swa_dev</sys_updated_by>
-        <sys_updated_on>2021-11-10 10:33:45</sys_updated_on>
+        <sys_updated_on>2021-11-15 12:11:57</sys_updated_on>
     </sys_script_include>
 </record_update>

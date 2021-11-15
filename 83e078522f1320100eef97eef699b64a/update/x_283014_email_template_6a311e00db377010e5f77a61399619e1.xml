@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_283014_email_template">
     <x_283014_email_template action="INSERT_OR_UPDATE">
-        <internal_name>example_footer</internal_name>
-        <name>Example Footer</name>
+        <internal_name>example_header</internal_name>
+        <name>Example Header</name>
         <sys_class_name>x_283014_email_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-11-08 10:00:56</sys_created_on>
-        <sys_id>dd874cc4dbb33010e5f77a61399619f7</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Example Footer</sys_name>
+        <sys_created_on>2021-11-08 20:02:08</sys_created_on>
+        <sys_id>6a311e00db377010e5f77a61399619e1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Example Header</sys_name>
         <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
-        <sys_update_name>x_283014_email_template_dd874cc4dbb33010e5f77a61399619f7</sys_update_name>
+        <sys_update_name>x_283014_email_template_6a311e00db377010e5f77a61399619e1</sys_update_name>
         <sys_updated_by>swa_dev</sys_updated_by>
-        <sys_updated_on>2021-11-15 08:58:59</sys_updated_on>
-        <template><![CDATA[<footer>Hi from a test include | I'm a footer</footer>]]></template>
+        <sys_updated_on>2021-11-15 11:01:29</sys_updated_on>
+        <template><![CDATA[<table>
+	<tr><td><h1>Update</h1></td></tr>
+</table>]]></template>
         <used_for_notifications/>
     </x_283014_email_template>
 </record_update>

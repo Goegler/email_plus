@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="id" label="Id" language="en" table="x_283014_email_metric_instance">
+    <sys_documentation element="dimension_type" label="Dimension Type" language="en" table="x_283014_email_metric_instance">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>id</element>
+            <element>dimension_type</element>
             <help/>
             <hint/>
-            <label>Id</label>
+            <label>Dimension Type</label>
             <language>en</language>
             <name>x_283014_email_metric_instance</name>
-            <plural>Ids</plural>
+            <plural>Dimension Types</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>swa_dev</sys_created_by>
-            <sys_created_on>2021-11-10 10:15:40</sys_created_on>
-            <sys_id>723e96a8db373010e5f77a61399619b8</sys_id>
+            <sys_created_on>2021-11-12 09:46:47</sys_created_on>
+            <sys_id>5fca6811dbb33010e5f77a6139961931</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Id</sys_name>
+            <sys_name>Dimension Type</sys_name>
             <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
             <sys_policy/>
             <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
-            <sys_update_name>sys_documentation_x_283014_email_metric_instance_id_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_283014_email_metric_instance_dimension_type_en</sys_update_name>
             <sys_updated_by>swa_dev</sys_updated_by>
-            <sys_updated_on>2021-11-10 10:15:40</sys_updated_on>
+            <sys_updated_on>2021-11-12 09:46:47</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

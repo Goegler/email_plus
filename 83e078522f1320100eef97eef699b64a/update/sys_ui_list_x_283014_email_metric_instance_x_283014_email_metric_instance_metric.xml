@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_283014_email_metric_instance" relationship="" sys_domain="global" table="x_283014_email_metric_instance" version="2" view="metric">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_283014_email_metric_instance" element="NULL" name="x_283014_email_metric_instance" parent="x_283014_email_metric_instance" relationship="NULL" sys_domain="global" view="49b5e8d6db3b3010e5f77a6139961957">9639689edb3b3010e5f77a6139961996</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:13:48</sys_created_on>
+            <sys_id>5639689edb3b3010e5f77a6139961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:13:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dimension_type</element>
+            <list_id display_value="x_283014_email_metric_instance" element="NULL" name="x_283014_email_metric_instance" parent="x_283014_email_metric_instance" relationship="NULL" sys_domain="global" view="49b5e8d6db3b3010e5f77a6139961957">9639689edb3b3010e5f77a6139961996</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:13:48</sys_created_on>
+            <sys_id>da39689edb3b3010e5f77a6139961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:13:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>value</element>
+            <list_id display_value="x_283014_email_metric_instance" element="NULL" name="x_283014_email_metric_instance" parent="x_283014_email_metric_instance" relationship="NULL" sys_domain="global" view="49b5e8d6db3b3010e5f77a6139961957">9639689edb3b3010e5f77a6139961996</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:13:48</sys_created_on>
+            <sys_id>5e39689edb3b3010e5f77a6139961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:13:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_283014_email_metric_instance</name>
+            <parent>x_283014_email_metric_instance</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>swa_dev</sys_created_by>
+            <sys_created_on>2021-11-15 12:13:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9639689edb3b3010e5f77a6139961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_283014_email_metric_instance</sys_name>
+            <sys_package display_value="Email+" source="x_283014_email">83e078522f1320100eef97eef699b64a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Email+">83e078522f1320100eef97eef699b64a</sys_scope>
+            <sys_update_name>sys_ui_list_x_283014_email_metric_instance_x_283014_email_metric_instance_metric</sys_update_name>
+            <sys_updated_by>swa_dev</sys_updated_by>
+            <sys_updated_on>2021-11-15 12:13:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Metric" name="metric">49b5e8d6db3b3010e5f77a6139961957</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" extends="sys_metadata" label="Email+ Template" max_length="40" name="x_283014_email_template" sizeclass="1" type="collection">
-        <element label="Display Name" mandatory="true" max_length="255" name="display_name" type="string"/>
-        <element label="Internal Name" max_length="255" name="internal_name" type="string"/>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Email+ Template" max_length="40" name="x_283014_email_template" sizeclass="3" type="collection">
+        <element label="Internal Name" max_length="255" name="internal_name" read_only="true" type="string"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
         <element label="Template" mandatory="true" max_length="4000" name="template" type="string_full_utf8"/>
         <element label="Used for Notifications" max_length="4000" name="used_for_notifications" reference="sysevent_email_action" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
     </element>
