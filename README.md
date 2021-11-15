@@ -3,5 +3,5 @@ Email+ is a way to define reusable templates and components to be used in the OO
 
 Further more, Email+ also has:
 
-A feature to incorporate an email tracking pixel in to the email body, to track if an email has been opened.
-A feature to wrap the links in an email with a trackable link, so you can track the click rate of an email.
+*A feature to incorporate an email tracking pixel in to the email body, to track if an email has been opened.
+*A feature to wrap the links in an email with a trackable link, so you can track the click rate of an email.
