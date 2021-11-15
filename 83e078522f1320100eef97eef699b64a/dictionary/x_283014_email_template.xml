@@ -3,6 +3,6 @@
         <element label="Internal Name" max_length="255" name="internal_name" read_only="true" type="string"/>
         <element display="true" label="Name" max_length="255" name="name" type="string"/>
         <element label="Template" mandatory="true" max_length="4000" name="template" type="string_full_utf8"/>
-        <element label="Used for Notifications" max_length="4000" name="used_for_notifications" reference="sysevent_email_action" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Used for Notifications" max_length="4000" name="used_for_notifications" reference="sysevent_email_action" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
     </element>
 </database>
